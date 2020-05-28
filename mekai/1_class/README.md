@@ -1,5 +1,5 @@
 # まとめ
-![まとめ](..\1_class\まとめ.png)
+![まとめ](https://user-images.githubusercontent.com/61077860/83096050-af743080-a0df-11ea-8058-4107712af251.png)
 
 ## 豆知識
 pwoershellが文字化けする場合は、`chcp 65001`を実行しよう。
