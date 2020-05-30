@@ -1,6 +1,8 @@
 # まとめ
 ![まとめ](https://user-images.githubusercontent.com/61077860/83329087-3e40a300-a2c2-11ea-8612-5c45d7e2cf2b.png)
 
+![まとめ2](https://user-images.githubusercontent.com/61077860/83329117-852e9880-a2c2-11ea-951d-cabf3fe96d6a.png)
+
 
 # 具象クラス
 値を表すデータメンバをもつ、単純な構造のクラスを具象クラスという。
