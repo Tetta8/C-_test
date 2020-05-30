@@ -1,7 +1,7 @@
 CXX = g++
-TARGET = Date
+TARGET = test
 CXXFLAGS = -Wall -O2 -pipe
-SRCS = Date.cpp DateTest2.cpp
+SRCS = IdNo.cpp IdNoTest.cpp
 OBJS := $(SRCS:.cpp=.o) #SRCSの各ファイルのサフィックスの.cppを.oに変換
 
 $(TARGET): $(OBJS)
