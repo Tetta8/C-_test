@@ -15,6 +15,7 @@ public:
 
     Counter& operator++(){
         if(cnt < std::numeric_limits<unsigned>::max()) cnt++;
+        return *this;
     }
 
     Counter operator++(int){
