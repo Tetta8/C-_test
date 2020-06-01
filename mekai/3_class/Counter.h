@@ -9,9 +9,31 @@ class Counter{
 public:
     Counter():cnt(0) { }
 
-    void increment() {if (cnt < std::numeric_limits<unsigned>::max()) cnt++;}
-    void decrement() {if (cnt > 0) cnt--;}
-    unsigned value() {return cnt;}
+    operator unsigned() const {return cnt;}
+
+    bool operator!() const {return cnt == 0;}
+
+    Counter& operator++(){
+        if(cnt < std::numeric_limits<unsigned>::max()) cnt++;
+    }
+
+    Counter operator++(int){
+        Counter x = *this;
+        ++(*this);
+        return x;
+    }
+
+    Counter& operator--(){
+        if(cnt > 0) cnt--;
+        return *this;
+    }
+
+    Counter operator--(int){
+        Counter x = *this;
+        --(*this);
+        return x;
+    }
+  
 };
 
 #endif

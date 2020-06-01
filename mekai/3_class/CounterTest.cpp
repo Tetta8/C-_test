@@ -5,22 +5,22 @@ using namespace std;
 int main(){
     int no;
     Counter x;
+    Counter y;
 
-    cout << "現在のカウンタ：" << x.value() << endl;
-    cout << "カウントアップ回数";
+    cout << "カウントアップ回数：";
     cin >> no;
 
-    for(int i = 0; i < no; i++){
-        x.increment();
-        cout << x.value() << endl;
-    }
+    for(int i = 0; i < no; i++)
+        cout << x++ << " " << ++y << endl;
 
     cout << "カウントダウン回数：";
     cin >> no;
+    for(int i = 0; i < no; i++)
+        cout << x-- << " " << --y << endl;
 
-    for(int i = 0; i < no; i++){
-        x.decrement();
-        cout << x.value() << endl;
-    }
+    if(!x) cout << "" << endl;
+    else cout << "" << endl;
+
+    return 0;
 
 }
