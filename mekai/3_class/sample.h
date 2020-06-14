@@ -14,8 +14,8 @@ public:
     Complex operator-() const{return Complex(-re, -im);}
 
     // 2項+演算子
-    Complex operator+(const Complex& x){
-        return Complex(re + x.re, im + x.im);
+    friend Complex operator+(const Complex& x, const Complex& y){
+        return Complex(x.re + y.re, x.im + y.im);
     }
 
 
