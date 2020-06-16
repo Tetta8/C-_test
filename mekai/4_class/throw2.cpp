@@ -7,7 +7,7 @@ class OverFlow{};
 
 int f(int x){
     if(x < 0)
-        throw "error";
+        throw "おかしい。値が負になっています。\n";
     else if(x > 30000)
         throw OverFlow();
     else
@@ -21,7 +21,7 @@ int main(){
 
     try{
         int b = f(a);
-        cout << "その数の2倍は" << b << "です。" << endl;
+        cout << "その数の2倍は" << b << "です。\n";
     }
 
     catch (const char* str){

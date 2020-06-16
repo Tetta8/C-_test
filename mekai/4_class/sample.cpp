@@ -1,4 +1,5 @@
 #include <iostream>
+#include <exception>
 
 using namespace std;
 
@@ -25,15 +26,13 @@ int main(){
         }
     }
 
-    catch(ErrorOverFlow){
-        cout << "オブジェクトのキャッチ" << endl;
-        cout << "100より大きな数値が入力されました。" << endl;
-    }
-    
     catch(const char* str){
         cout << "文字列のキャッチ" << endl;
         cout << str << endl;
     }
-
-
+    
+    catch(ErrorOverFlow){
+        cout << "クラスのキャッチ" << endl;
+        cout << "100より大きな数値が入力されました。" << endl;
+    }
 }
