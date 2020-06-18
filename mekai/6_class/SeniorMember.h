@@ -16,7 +16,7 @@ public:
         care_level = (level >= 1 && level <= 5) ? level : 0;
     }
 
-    void print() const;
+    virtual void print() const;
 };
 
 #endif
