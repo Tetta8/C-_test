@@ -1,7 +1,7 @@
 CXX = g++
 TARGET = test
 CXXFLAGS = -Wall -O2 -pipe
-SRCS = VipMember.cpp Member.cpp pointer.cpp 
+SRCS = Member.cpp ReaigningMemberUpCast.cpp
 OBJS := $(SRCS:.cpp=.o) #SRCSの各ファイルのサフィックスの.cppを.oに変換
 
 $(TARGET): $(OBJS)

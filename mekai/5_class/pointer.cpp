@@ -21,4 +21,4 @@ int main(){
     VipMember* pv2 = &mineya;
     cout << "pv2の氏名：" << pv2->name() << endl;
     cout << "pv2の特典：" << pv2->get_privilege() << endl;
-}
+}ohaおは
