@@ -1,7 +1,7 @@
 CXX = g++
 TARGET = test
 CXXFLAGS = -Wall -O2 -pipe
-SRCS = Member.cpp SeniorMember.cpp VipMember.cpp MemberPrintPtr.cpp
+SRCS = Member.cpp SeniorMember.cpp VipMember.cpp MemberDownCast.cpp
 OBJS := $(SRCS:.cpp=.o) #SRCSの各ファイルのサフィックスの.cppを.oに変換
 
 $(TARGET): $(OBJS)
