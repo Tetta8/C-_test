@@ -4,19 +4,23 @@
 using namespace std;
 
 int main(){
-    Shape* a[2];
+    Shape* a[] = {
+        new Point(),
+        new HorzLine(9),
+        new VertLine(6),
+        new Rectangle(7, 3),
+    };
 
-    a[0] = new Point;
-    a[1] = new Rectangle(7, 3);
-
-    for(int i = 0; i < 2; i++){
+    for(int i = 0; i < (sizeof(a) / sizeof(a[0])); i++){
         cout << "a[" << i << "]" << endl;
-        a[i]->draw();
+        a[i]->print();
+        a[i]->debug();
         cout << endl;
     }
 
-    delete a[0];
-    delete a[1];
+    for(int i = 0; i < (sizeof(a) / sizeof(a[0])); i++){
+        delete a[i];
+    }
 
     return 0;
 }
