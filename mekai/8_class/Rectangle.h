@@ -18,8 +18,8 @@ public:
     }
 
     void draw() const{
-        for(int i = 0; i <= height; i++){
-            for(int j = 0; j <= width; j++){
+        for(int i = 1; i <= height; i++){
+            for(int j = 1; j <= width; j++){
                 std::cout << "*";
             }
             std::cout << std::endl;

@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <typeinfo>
 
 class Shape{
 public:
@@ -17,9 +18,9 @@ public:
     }
 
     virtual void debug() const = 0;
-}
+};
 
-inline Shape::~Shape(){}
+inline Shape::~Shape() {}
 
 inline void Shape::debug() const{
     std::cout << "-- デバッグ情報 --" << std::endl;
@@ -27,7 +28,7 @@ inline void Shape::debug() const{
     std::cout << "アドレス：" << this << std::endl;
 }
 
-inline std::ostream& operator<<(std::ostream&, const Shape& s){
+inline std::ostream& operator<<(std::ostream& os, const Shape& s){
     return os << s.to_string();
 }
 
