@@ -1,14 +1,21 @@
 #ifndef ___Math_Exception
 #define ___Math_Exception
 
-class MathException {
+#include <string>
+#include <cstring>
+#include <sstream>
+#include <exception>
+#include <stdexcept>
+
+class MathException : public std::logic_error {
 public:
-    virtual void display() const {std::cout << "数値演算例外" << std::endl;}
+    MathException() : logic_error("数値演算例外"){ }
+    virtual const char* what() const{return "数値演算例外";}
 };
 
 class DividedByZero : public MathException{
 public:
-    void display() const{std::cout << "0による除算" << std::endl;}
+    const char* what() const {return "0による除算";}
 };
 
 class Overflow : public MathException{
@@ -16,7 +23,12 @@ class Overflow : public MathException{
 public:
     Overflow(int val) : v(val){}
     int value() const {return v;}
-    void display() const{std::cout << "オーバーフロー（値は" << v << ")" << std::endl;}
+    const char* what() const{
+        static char buff[128];
+        std::ostringstream s;
+        s << "オバーフロー（値は" << v << "）";
+        return std::strcpy(buff, s.str().c_str());
+    }
 };
 
 class Underflow : public MathException{
@@ -24,7 +36,12 @@ class Underflow : public MathException{
 public:
     Underflow(int val) : v(val){}
     int value() const{return v;}
-    void display() const{std::cout << "アンダーフロー（値は" << v << ")" << std::endl;}
+    const char* what() const{
+        static char buff[128];
+        std::ostringstream s;
+        s << "アンダーフロー（値は"<< v << "）";
+        return std::strcpy(buff, s.str().c_str());
+    }
 };
 
 #endif
