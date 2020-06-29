@@ -6,7 +6,7 @@ template<class type> class SimpleStack{
     int size;
     int ptr;
 
-    SimpleStac(const simpleStack<Type>&);
+    SimpleStack(const SimpleStack<Type>&);
     Simplestack& operator=(const SimpleStack<Type>&);
 
 public:
