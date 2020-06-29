@@ -1,0 +1,4 @@
+#ifndef ___Class_SimpleStackImplementation
+#define ___Class_SimpleStackImplementation
+
+#endif
