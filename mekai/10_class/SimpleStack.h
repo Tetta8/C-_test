@@ -1,16 +1,16 @@
 #ifndef ___Class_SimpleStack
 #define ___Class_SimpleStack
 
-template<class type> class SimpleStack{
-    Type* size;
+template<class Type> class SimpleStack{
+    Type* stk;
     int size;
     int ptr;
 
     SimpleStack(const SimpleStack<Type>&);
-    Simplestack& operator=(const SimpleStack<Type>&);
+    SimpleStack& operator=(const SimpleStack<Type>&);
 
 public:
-    class Overflow();
+    class Overflow{};
 
     class Empty {};
 
