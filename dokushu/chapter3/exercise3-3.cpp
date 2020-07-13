@@ -51,7 +51,7 @@ int main(){
     std::string str_title = "AtoB";
     std::string str_writer = "sasaki";
     
-    Book A(str_title, str_writer, 1000);
+    Book A("AtoB", "sasaki", 1000);
 
     std::cout << "Book A Info" << std::endl;
     A.Info();
