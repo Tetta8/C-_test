@@ -6,7 +6,7 @@ class int_vector{
     int* m_array;
 
 public:
-    int_vector(std::initializer_list<int>* init);
+    int_vector(std::initializer_list<int> init);
     ~int_vector();
 
     std::size_t size() const{
@@ -18,10 +18,10 @@ public:
     }
 };
 
-int_vector::int_vector(std::initializer_list<int>* init)
-    : m_size{init->size()}, m_array{new int[init->size()]} {
-        for(std::size_t i = 0; i < init->size(); ++i){
-            m_array[i] = 
+int_vector::int_vector(std::initializer_list<int> init)
+    : m_size{init.size()}, m_array{new int[init.size()]} {
+        for(std::size_t i = 0; i < init.size(); ++i){
+            m_array[i] = init.begin();
         }
 }
 
