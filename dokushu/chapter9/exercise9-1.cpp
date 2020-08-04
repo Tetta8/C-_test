@@ -12,7 +12,7 @@ int main(){
     float f = 20.01;
     double d = 4.2;
 
-    std::cout << id(i) << std::endl;
-    std::cout << id(f) << std::endl;
-    std::cout << id(d) << std::endl;
+    std::cout << id<int>(i) << std::endl;
+    std::cout << id<float>(f) << std::endl;
+    std::cout << id<double>(d) << std::endl;
 }
