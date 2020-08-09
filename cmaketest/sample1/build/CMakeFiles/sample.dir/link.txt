@@ -1,0 +1,1 @@
+/usr/bin/c++.exe   -Wl,--enable-auto-import CMakeFiles/sample.dir/main.cpp.o CMakeFiles/sample.dir/hello.cpp.o  -o sample.exe -Wl,--out-implib,libsample.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

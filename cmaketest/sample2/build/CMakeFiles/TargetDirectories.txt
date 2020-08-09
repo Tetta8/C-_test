@@ -1,0 +1,4 @@
+/cygdrive/c/cygwin64/home/copen/CPP_test/cmaketest/sample2/build/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/cygwin64/home/copen/CPP_test/cmaketest/sample2/build/CMakeFiles/edit_cache.dir
+/cygdrive/c/cygwin64/home/copen/CPP_test/cmaketest/sample2/build/CMakeFiles/greetings.dir
+/cygdrive/c/cygwin64/home/copen/CPP_test/cmaketest/sample2/build/CMakeFiles/sample.dir
